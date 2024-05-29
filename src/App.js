@@ -12,6 +12,8 @@ import UserInvoice from './components/user/userinvoice';
 import OrderInvoice from './components/ordertable/orderinvoice';
 import Email from './components/email/email';
 import Sidebar from './components/slidebar/sidebar';
+import ImageGallery from './components/mediagallery/mediagallery';
+import Media from './components/media/media';
 
 function App() {
   return (
@@ -23,10 +25,11 @@ function App() {
     <CommentInvoice/>
     <SizeInvoice/>
     <Coupon/>   */}
-    {/* <UserInvoice/> */}
     {/* <OrderInvoice/> */}
     {/* <Email/> */}
-     <Sidebar/>
+     {/* <Sidebar/> */}
+     {/* <ImageGallery/> */}
+    <Media/>
     </div>
   );
 }
