@@ -10,6 +10,8 @@ import SizeInvoice from './components/size/sizeinvoice';
 import Coupon from './components/coupon/coupon';
 import UserInvoice from './components/user/userinvoice';
 import OrderInvoice from './components/ordertable/orderinvoice';
+import Email from './components/email/email';
+import Sidebar from './components/slidebar/sidebar';
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
     <SizeInvoice/>
     <Coupon/>   */}
     {/* <UserInvoice/> */}
-    <OrderInvoice/>
+    {/* <OrderInvoice/> */}
+    {/* <Email/> */}
+     <Sidebar/>
     </div>
   );
 }
