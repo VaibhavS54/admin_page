@@ -24,18 +24,6 @@
     flex-direction: column;
     width: 100%;
   }
-  .topButtons button{
-    color: black;
-    background-color: white;
-    border: 2px solid black;
-    width: fit-content;
-  }
-  .middleInputs button{
-    column-gap: 1cm;
-    background-color: white;
-    color: black;
-    width: fit-content;
-  }
   .topButtons, .middleInputs, .redButtonsContainer{
     text-align: left;
   }
@@ -43,6 +31,13 @@
     margin-top: 6px;
     margin-left: 4px;
   }
+  .topButtons button, .middleInputs input, .leftInputs input, .leftInputs button {
+    padding: 8px 12px;
+    margin: 4px 8px;
+    width: 100px;
+    background-color: white;
+  }
+  
   .redButtonsContainer button {
     background-color: red;
     color: white;
@@ -55,9 +50,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  .leftInputs button{
-    color: black;
-  }
+  
   .rightInputs {
     display: flex;
     flex-direction: column;

@@ -1,21 +1,36 @@
+import "./couponinvoice.css";
+import { CouponCounter } from "./couponcounter";
+import { CouponToggle } from "./coupontoggle";
 
-import "./couponinvoice.css"
-import { CouponCounter } from "./couponcounter"
-import { CouponToggle } from "./coupontoggle"
+const couponData = [
+  {
+    code: "CODE123",
+    amount: "10%",
+    description: "10% off on all items",
+    productId: "12345",
+    usageLimit: "5/10",
+    expiry: "31-12-2024"
+  },
+  {
+    code: "CODE456",
+    amount: "20%",
+    description: "20% off on selected items",
+    productId: "67890",
+    usageLimit: "3/5",
+    expiry: "30-11-2024"
+  }
+];
 
-
- function CouponInvoice() {
-
+function CouponInvoice() {
   return (
     <div>
-    <div className="topButtons">
-    <button className="coupons">Coupons</button>
-    <button className="giftCards">Gift Cards</button>
-  </div>
+      <div className="topButtons">
+        <button className="coupons">Coupons</button>
+        <button className="giftCards">Gift Cards</button>
+      </div>
       <div className="mainInvoiceContainer">
-
         <div className="middleInputs">
-          <input type="" placeholder="+ Add new" />
+          <button>Add New</button>
         </div>
 
         <div className="redButtonsContainer">
@@ -40,42 +55,35 @@ import { CouponToggle } from "./coupontoggle"
           <table>
             <thead>
               <tr>
-                <th> </th>
+                <th></th>
                 <th>Code</th>
                 <th>Coupon Amount</th>
-                <th>Discription </th>
+                <th>Description</th>
                 <th>Product ID</th>
                 <th>Usage/Limit</th>
-                <th>Expirt Date</th>
+                <th>Expiry Date</th>
                 <th>Action</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><CouponToggle /></td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><CouponToggle /></td>
-              </tr>
+              {couponData.map((coupon, index) => (
+                <tr key={index}>
+                  <td><input type="checkbox" /></td>
+                  <td>{coupon.code}</td>
+                  <td>{coupon.amount}</td>
+                  <td>{coupon.description}</td>
+                  <td>{coupon.productId}</td>
+                  <td>{coupon.usageLimit}</td>
+                  <td>{coupon.expiry}</td>
+                  <td><CouponToggle /></td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
       </div>
-      </div>
-  )
+    </div>
+  );
 }
- export default CouponInvoice;
+
+export default CouponInvoice;

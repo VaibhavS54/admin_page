@@ -1,22 +1,37 @@
+import "./invoice.css";
+import { InvoiceCounter } from "./invoicecounter";
+import { Toggle } from "./toggle";
 
-import "./invoice.css"
-import { InvoiceCounter } from "./invoicecounter"
-import { Toggle } from "./toggle"
+const invoiceData = [
+  {
+    code: "9JSX-3F8K-WaRy",
+    order: "19990",
+    balance: "0.00",
+    redeem: "In Order: #19990",
+    expiry: "23-05-2014",
+    recipient: "digital marketing@ ogi vetechnology.com"
+  },
+  {
+    code: "P7Q9-B6T2-Y1M4",
+    order: "",
+    balance: "101",
+    redeem: "",
+    expiry: "Unlimited",
+    recipient: ""
+  }
+];
 
-
- function Invoice() {
-
+function Invoice() {
   return (
     <div>
-    <div className="topButtons">
-    <button className="coupons">Coupons</button>
-    <button className="giftCards">Gift Cards</button>
-  </div>
+      <div className="topButtons">
+        <button className="coupons"> Coupons</button>
+        <button className="giftCards">Gift card</button>
+      </div>
       <div className="mainInvoiceContainer">
-
         <div className="middleInputs">
-          <input type="" placeholder="+ Add new" />
-          <input placeholder="Import/Export" />
+          <button className="but">Add new</button>
+          <button className="but">import/export</button>
         </div>
 
         <div className="redButtonsContainer">
@@ -41,10 +56,10 @@ import { Toggle } from "./toggle"
           <table>
             <thead>
               <tr>
-                <th> </th>
+                <th></th>
                 <th>Code</th>
                 <th>Order</th>
-                <th>Balance </th>
+                <th>Balance</th>
                 <th>Redeem</th>
                 <th>Expiry on</th>
                 <th>Recipient</th>
@@ -52,31 +67,24 @@ import { Toggle } from "./toggle"
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td>9JSX-3F8K-WaRy</td>
-                <td>19990</td>
-                <td>0.00</td>
-                <td>In Order: #19990</td>
-                <td>23-05-2014</td>
-                <td>digital marketing@ ogi vetechnology.com</td>
-                <td><Toggle /></td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td>P7Q9-B6T2-Y1M4</td>
-                <td></td>
-                <td>101</td>
-                <td></td>
-                <td>Unlimited</td>
-                <td></td>
-                <td><Toggle /></td>
-              </tr>
+              {invoiceData.map((invoice, index) => (
+                <tr key={index}>
+                  <td><input type="checkbox" /></td>
+                  <td>{invoice.code}</td>
+                  <td>{invoice.order}</td>
+                  <td>{invoice.balance}</td>
+                  <td>{invoice.redeem}</td>
+                  <td>{invoice.expiry}</td>
+                  <td>{invoice.recipient}</td>
+                  <td><Toggle /></td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
       </div>
-      </div>
-  )
+    </div>
+  );
 }
- export default Invoice;
+
+export default Invoice;

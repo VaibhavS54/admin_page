@@ -1,10 +1,10 @@
 
-.invoiceContainer {
+.userinvoiceContainer {
     display: flex;
   
   }
   
-  .redDashboardContainer {
+  .userredDashboardContainer {
     background-color: red;
     display: flex;
     flex-direction: column;
@@ -14,68 +14,68 @@
     padding-top: 20px;
   }
   
-  .redDashboardItems {
+  .userredDashboardItems {
     padding: 8px 5px;
   }
   
-  .mainInvoiceContainer {
+  .usermainInvoiceContainer {
     background-color: #e8e8e6;
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  .topButtons button{
+  .usertopButtons button{
     color: black;
     background-color: white;
     border: 2px solid black;
     width: fit-content;
   }
-  .middleInputs button{
+  .usermiddleInputs button{
     column-gap: 1cm;
     background-color: white;
     color: black;
     width: fit-content;
   }
-  .topButtons, .middleInputs, .redButtonsContainer{
+  .usertopButtons, .usermiddleInputs, .userredButtonsContainer{
     text-align: left;
   }
-  .middleInputs{
+  .usermiddleInputs{
     margin-top: 6px;
     margin-left: 4px;
   }
-  .redButtonsContainer button {
+  .userredButtonsContainer button {
     background-color: red;
     color: white;
     padding: 8px 12px;
     margin: 4px 8px;
   }
   
-  .lastInputContainer {
+  .userlastInputContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .leftInputs button{
+  .userleftInputs button{
     color: black;
   }
-  .rightInputs {
+  .userrightInputs {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
   
-  .invoiceTable table {
+  .userinvoiceTable table {
     border-collapse: collapse;
     width: 100%;
   }
   
-  .invoiceTable th {
+  .userinvoiceTable th {
     border: 2px solid black;
     padding: 8px;
     text-align: center;
   }
   
-  .invoiceTable td {
+  .userinvoiceTable td {
     border: 1px solid black;
     padding: 8px;
     text-align: center;
@@ -83,11 +83,10 @@
     border-top: hidden;
   }
   
-  .invoiceTable th {
+  .userinvoiceTable th {
     background-color: white;
   }
   
-  .invoiceTable td {
+  .userinvoiceTable td {
     background-color: #e8e8e6;
   }
-  

@@ -1,74 +1,82 @@
+import "./bloginvoice.css";
+import { BlogCounter } from "./blogcounter";
+import { BlogToggle } from "./blogtoggle";
 
-import "./bloginvoice.css"
-import { BlogCounter } from "./blogcounter"
-import { BlogToggle } from "./blogtoggle"
+const blogData = [
+  {
+    title: "How to Use React",
+    author: "John Doe",
+    categories: "Development",
+    tags: "React, JavaScript",
+    comments: 5,
+    date: "23-05-2023"
+  },
+  {
+    title: "Understanding JavaScript",
+    author: "Jane Smith",
+    categories: "Programming",
+    tags: "JavaScript, ES6",
+    comments: 10,
+    date: "15-06-2023"
+  }
+];
 
-
- function BlogInvoice() {
-
+function BlogInvoice() {
   return (
-      <div className="mainInvoiceContainer">
+    <div className="mainInvoiceContainer">
+      <div className="middleInputs">
+        <button>Add new</button>
+      </div>
+      <div className="redButtonsContainer">
+        <button>ALL</button>
+        <button>Published</button>
+        <button>Draft</button>
+      </div>
 
-        <div className="middleInputs">
-          <input type="" placeholder="+ Add new" />
+      <div className="lastInputContainer">
+        <div className="leftInputs">
+          <input placeholder="Bulk Actions" />
+          <button>Apply</button>
+          <input placeholder="All Dates" />
+          <input placeholder="All Categories" />
+          <button>Filter</button>
         </div>
-
-        <div className="redButtonsContainer">
-          <button>ALL</button>
-          <button>Published</button>
-          <button>Draft</button>
-        </div>
-
-        <div className="lastInputContainer">
-          <div className="leftInputs">
-            <input placeholder="Bulk Actions" />
-            <button>Apply</button>
-            <input placeholder="All Dates" />
-            <input placeholder="All Categories" />
-            <button>Filter</button>
-          </div>
-          <div className="rightInputs">
-            <input placeholder="search" type="text" />
-            <BlogCounter />
-          </div>
-        </div>
-
-        <div className="invoiceTable">
-          <table>
-            <thead>
-              <tr>
-                <th> </th>
-                <th>Title</th>
-                <th>Auther Name</th>
-                <th>Categories </th>
-                <th>tags</th>
-                <th>comments</th>
-                <th>RDates</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td>9JSX-3F8K-WaRy</td>
-                <td>19990</td>
-                <td>0.00</td>
-                <td>In Order: #19990</td>
-                <td>23-05-2014</td>
-                <td>digital marketing@ ogi vetechnology.com</td>
-              </tr>
-              <tr>
-                <td><input type="checkbox" /></td>
-                <td>P7Q9-B6T2-Y1M4</td>
-                <td></td>
-                <td>101</td>
-                <td></td>
-                <td>Unlimited</td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
+        <div className="rightInputs">
+          <input placeholder="search" type="text" />
+          <BlogCounter />
         </div>
       </div>
-  )
+
+      <div className="invoiceTable">
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>Title</th>
+              <th>Author Name</th>
+              <th>Categories</th>
+              <th>Tags</th>
+              <th>Comments</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            {blogData.map((blog, index) => (
+              <tr key={index}>
+                <td><input type="checkbox" /></td>
+                <td>{blog.title}</td>
+                <td>{blog.author}</td>
+                <td>{blog.categories}</td>
+                <td>{blog.tags}</td>
+                <td>{blog.comments}</td>
+                <td>{blog.date}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
 }
- export default BlogInvoice;
+
+export default BlogInvoice;

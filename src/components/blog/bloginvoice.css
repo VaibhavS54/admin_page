@@ -27,6 +27,11 @@
 .topButtons, .middleInputs, .redButtonsContainer{
   text-align: left;
 }
+.middleInputs{
+  margin-top: 5px;
+  margin-left: 3px;
+  size: 2cm;
+}
 .topButtons button, .middleInputs input, .leftInputs input, .leftInputs button {
   padding: 8px 12px;
   margin: 4px 8px;
