@@ -14,6 +14,7 @@ import Email from './components/email/email';
 import Sidebar from './components/slidebar/sidebar';
 import ImageGallery from './components/mediagallery/mediagallery';
 import Media from './components/media/media';
+import GiftCardSettings from './components/gift/gift';
 
 function App() {
   return (
@@ -29,7 +30,8 @@ function App() {
     {/* <Email/> */}
      {/* <Sidebar/> */}
      {/* <ImageGallery/> */}
-    <Media/>
+    {/* <Media/> */}
+    <GiftCardSettings/>
     </div>
   );
 }
