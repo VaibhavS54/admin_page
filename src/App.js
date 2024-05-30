@@ -22,32 +22,33 @@ import CouponLimit from './components/couponlimit/couponlimit';
 import Checkout from './components/multicheck/multicheck';
 import Currency from './components/multigeneral/multigeneral';
 import GiftCard from './components/giftcard/giftcard';
+import Dashboard from './components/dashboard/dashboard';
 
 function App() {
   return (
     <div className="App">
        {/* <Sidebar/>
+       <Dashboard/>
+       <Currency/>
+       <LocationSettings/>
+       <Checkout/>
+       <BlogInvoice/>
+       <ImageGallery/>
+       <Media/>
+       <PageInvoice/>
+       <CommentInvoice/>
+       <SizeInvoice/> 
+       <CouponInvoice/> 
+       <CouponGeneral/>
+       <CouponComponent/>
+       <CouponLimit/>
+       <Invoice/> 
+       <GiftCard/>
+       <Email/>
+       <UserInvoice/>
        <Order/>
-     <Invoice/>
-      <CouponInvoice/>
-     <PageInvoice/>
-    <CommentInvoice/>
-      <SizeInvoice/>   
-    <Coupon/> 
-    <OrderInvoice/>*/}
-    {/* <Email/> */}
-    <GiftCard/>
-     {/* <UserInvoice/>  */}
-     {/* <ImageGallery/> */}
-    {/* <Media/> */}
-    {/* <GiftCardSettings/>
-   <LocationSettings/>
-    <BlogInvoice/> */}
-    {/* <CouponComponent/> */}
-    {/* <CouponGeneral/> */}
-    {/* <CouponLimit/> */}
-    {/* <Checkout/> */}
-    {/* <Currency/> */}
+       <OrderInvoice/>
+      <GiftCardSettings/> */}
     </div>
   );
 }
