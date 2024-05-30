@@ -17,10 +17,11 @@ const sizeData = [
 
 function SizeInvoice() {
   return (
+    <div className="top">
     <div className="mainInvoiceContainer">
       <div className="middleInputs">
         <h2>Size Chart</h2>
-        <button className="but">Add new</button>
+        <button className="but">Add new </button>
       </div>
 
       <div className="redButtonsContainer">
@@ -30,8 +31,12 @@ function SizeInvoice() {
 
       <div className="lastInputContainer">
         <div className="leftInputs">
-          <input placeholder="Bulk Actions" />
-          <button>Apply</button>
+        <select className="bulk">
+            <option>Bulk action</option>
+            <option></option>
+            <option></option>
+            </select>
+            <button>Apply</button>
         </div>
         <div className="rightInputs">
           <input placeholder="search" type="text" />
@@ -61,6 +66,7 @@ function SizeInvoice() {
           </tbody>
         </table>
       </div>
+    </div>
     </div>
   );
 }

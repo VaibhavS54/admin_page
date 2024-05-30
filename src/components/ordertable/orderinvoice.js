@@ -23,13 +23,13 @@ const orderData = [
 
 function OrderInvoice() {
   return (
-    <div>
-      <div className="ordertopButtons">
-        <button className="ordercoupons">Orders</button>
+    <div className="top">
+      <div className="topButtons">
+        <button className="coupons">Orders</button>
       </div>
       <div className="mainInvoiceContainer">
         <div className="middleInputs">
-          <button className="orderbut">Add order</button>
+          <button className="but">Add order</button>
         </div>
 
         <div className="orderredButtonsContainer">
@@ -44,10 +44,23 @@ function OrderInvoice() {
 
         <div className="lastInputContainer">
           <div className="leftInputs">
-            <input placeholder="Bulk Actions" />
+             <select className="bulk">
+            <option>Bulk action</option>
+            <option>Change to Processing</option>
+            <option>Change to On hold</option>
+            <option>Change to completed</option>
+            <option>Change to cancelled</option>
+            <option>Ship to Delivery Partner</option>
+            <option>Move to Trash</option>
+            </select>
             <button>Apply</button>
-            <input placeholder="Change role to" />
-            <button>Change</button>
+            <select className="bulk">
+            <option>Register coustomer</option>
+            </select>
+            <button>Fliter</button>
+            <select>
+              <option>Date</option>
+            </select>
           </div>
           <div className="orderrightInputs">
             <input placeholder="search" type="text" />

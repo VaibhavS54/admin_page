@@ -19,8 +19,10 @@ const pageData = [
 
 function PageInvoice() {
   return (
+    <div className="top">
     <div className="mainInvoiceContainer">
       <div className="middleInputs">
+        <h2>Pages</h2>
         <button className="but">Add new</button>
       </div>
 
@@ -31,12 +33,18 @@ function PageInvoice() {
       </div>
 
       <div className="lastInputContainer">
-        <div className="leftInputs">
-          <input placeholder="Bulk Actions" />
-          <button>Apply</button>
-          <input placeholder="all dates" />
-          <button>Filter</button>
-        </div>
+        <div className="leftInputs">  
+            <select className="bulk">
+            <option>Bulk action</option>
+            <option>edit</option>
+            <option>move to trash</option>
+            <option>Duplicate</option>
+            </select>
+            <button>Apply</button>
+            <select className="bulk">
+            <option>All dates</option>
+            </select>
+          </div>
         <div className="rightInputs">
           <input placeholder="search" type="text" />
           <PageCounter />
@@ -67,6 +75,7 @@ function PageInvoice() {
           </tbody>
         </table>
       </div>
+    </div>
     </div>
   );
 }

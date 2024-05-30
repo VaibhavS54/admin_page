@@ -23,14 +23,14 @@ const couponData = [
 
 function CouponInvoice() {
   return (
-    <div>
+    <div className="top">
       <div className="topButtons">
         <button className="coupons">Coupons</button>
         <button className="giftCards">Gift Cards</button>
       </div>
       <div className="mainInvoiceContainer">
         <div className="middleInputs">
-          <button>Add New</button>
+          <button className="but">Add New</button>
         </div>
 
         <div className="redButtonsContainer">
@@ -39,12 +39,19 @@ function CouponInvoice() {
         </div>
 
         <div className="lastInputContainer">
-          <div className="leftInputs">
-            <input placeholder="Bulk Actions" />
+        <div className="leftInputs">
+        <select className="bulk">
+            <option>Bulk action</option>
+            <option>Edit</option>
+            <option>Move to trash</option>
+            </select>
             <button>Apply</button>
-            <input placeholder="Coupon Type" />
-            <button>Apply</button>
-          </div>
+            <select className="bulk">
+            <option>fixed cart discount</option>
+            <option>percentage discount</option>
+            <option>fixed product discount</option>
+            </select>
+            </div>
           <div className="rightInputs">
             <input placeholder="search" type="text" />
             <CouponCounter />

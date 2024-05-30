@@ -30,6 +30,12 @@
   .middleInputs{
     margin-top: 6px;
     margin-left: 4px;
+    display: flex;
+    gap: 0.5cm;
+  }
+  .middleInputs .but{
+    margin-top: 0.5cm;
+    width: 2cm;
   }
   .topButtons button, .middleInputs input, .leftInputs input, .leftInputs button {
     padding: 8px 12px;

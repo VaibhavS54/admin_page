@@ -19,6 +19,7 @@ const commentData = [
 
 function CommentInvoice() {
   return (
+    <div className="top">
     <div className="mainInvoiceContainer">
       <div className="middleInputs">
         <h2>Comments</h2>
@@ -34,8 +35,12 @@ function CommentInvoice() {
 
       <div className="lastInputContainer">
         <div className="leftInputs">
-          <input placeholder="Bulk Actions" />
-          <button>Apply</button>
+        <select className="bulk">
+            <option>Bulk action</option>
+            <option>Delete</option>
+            <option>Enable</option>
+            </select>
+            <button>Apply</button>
         </div>
         <div className="rightInputs">
           <input placeholder="search" type="text" />
@@ -67,6 +72,7 @@ function CommentInvoice() {
           </tbody>
         </table>
       </div>
+    </div>
     </div>
   );
 }

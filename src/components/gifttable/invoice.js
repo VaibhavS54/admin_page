@@ -23,7 +23,7 @@ const invoiceData = [
 
 function Invoice() {
   return (
-    <div>
+    <div className="top">
       <div className="topButtons">
         <button className="coupons"> Coupons</button>
         <button className="giftCards">Gift card</button>
@@ -41,10 +41,16 @@ function Invoice() {
         </div>
 
         <div className="lastInputContainer">
-          <div className="leftInputs">
-            <input placeholder="Bulk Actions" />
+        <div className="leftInputs">  
+            <select className="bulk">
+            <option>Bulk action</option>
+            <option>Delete</option>
+            <option>Enable</option>
+            </select>
             <button>Apply</button>
-            <input placeholder="Dashboard" />
+            <select className="bulk">
+            <option>Dashboard</option>
+            </select>
           </div>
           <div className="rightInputs">
             <input placeholder="search" type="text" />

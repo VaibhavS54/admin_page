@@ -20,20 +20,22 @@ import LocationSettings from './components/multi/multi';
 function App() {
   return (
     <div className="App">
-      {/* <Order/>
+       {/* <Sidebar/>
+       <Order/>
      <Invoice/>
       <CouponInvoice/>
      <PageInvoice/>
     <CommentInvoice/>
-    // <SizeInvoice/>  */}
-    {/* <Coupon/>  */}
-    {/* <OrderInvoice/> */}
-    {/* <Email/> */}
-     {/* <Sidebar/> */}
-     {/* <ImageGallery/> */}
-    {/* <Media/> */}
-    {/* <GiftCardSettings/> */}
+      <SizeInvoice/>   
+    <Coupon/> 
+    <OrderInvoice/>
+    <Email/>
+     <UserInvoice/> */}
+     {/* <ImageGallery/>
+    <Media/> */}
+    {/* <GiftCardSettings/>
    <LocationSettings/>
+    <BlogInvoice/> */}
     </div>
   );
 }

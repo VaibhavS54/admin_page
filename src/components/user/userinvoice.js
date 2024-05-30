@@ -23,16 +23,16 @@ const userData = [
 
 function UserInvoice() {
   return (
-    <div>
-      <div className="usertopButtons">
-        <button className="usercoupons">User</button>
+    <div className="top">
+      <div className="topButtons">
+        <button className="coupons">User</button>
       </div>
-      <div className="usermainInvoiceContainer">
-        <div className="usermiddleInputs">
-          <button className="userbut">Add new</button>
+      <div className="mainInvoiceContainer">
+        <div className="middleInputs">
+          <button className="but">Add new</button>
         </div>
 
-        <div className="userredButtonsContainer">
+        <div className="redButtonsContainer">
           <button>ALL</button>
           <button>Administrator</button>
           <button>Editor</button>
@@ -43,9 +43,22 @@ function UserInvoice() {
 
         <div className="lastInputContainer">
           <div className="leftInputs">
-            <input placeholder="Bulk Actions" />
+          <select className="bulk">
+            <option>Bulk action</option>
+            <option>Delete</option>
+            <option>Send Password Reset</option>
+            </select>
             <button>Apply</button>
-            <input placeholder="Change role to" />
+            <select className="bulk">
+            <option>Change role to</option>
+            <option>Shop Manager</option>
+            <option>Customer</option>
+            <option>Customer</option>
+            <option>Subscriber</option>
+            <option>contributor</option>
+            <option>Author</option>
+            <option>Editor</option>
+            </select>
             <button>Change</button>
           </div>
           <div className="userrightInputs">

@@ -23,9 +23,11 @@ const blogData = [
 
 function BlogInvoice() {
   return (
+    <div className="top">
     <div className="mainInvoiceContainer">
       <div className="middleInputs">
-        <button>Add new</button>
+        <h2>Blog</h2>
+        <button className="but">Add new</button>
       </div>
       <div className="redButtonsContainer">
         <button>ALL</button>
@@ -35,11 +37,20 @@ function BlogInvoice() {
 
       <div className="lastInputContainer">
         <div className="leftInputs">
-          <input placeholder="Bulk Actions" />
-          <button>Apply</button>
-          <input placeholder="All Dates" />
-          <input placeholder="All Categories" />
-          <button>Filter</button>
+        <select className="bulk">
+            <option>Bulk action</option>
+            <option>Edit</option>
+            <option>Trash</option>
+            <option>Duplicate</option>
+            </select>
+            <button>Apply</button>
+            <select className="bulk">
+            <option>All Dates</option>
+            </select>
+            <select className="bulk">
+            <option>All Categories</option>
+            </select>
+            <button>Filter</button>
         </div>
         <div className="rightInputs">
           <input placeholder="search" type="text" />
@@ -75,6 +86,7 @@ function BlogInvoice() {
           </tbody>
         </table>
       </div>
+    </div>
     </div>
   );
 }
