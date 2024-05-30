@@ -15,23 +15,25 @@ import Sidebar from './components/slidebar/sidebar';
 import ImageGallery from './components/mediagallery/mediagallery';
 import Media from './components/media/media';
 import GiftCardSettings from './components/gift/gift';
+import LocationSettings from './components/multi/multi';
 
 function App() {
   return (
     <div className="App">
-     {/* <Order/>
+      {/* <Order/>
      <Invoice/>
       <CouponInvoice/>
      <PageInvoice/>
     <CommentInvoice/>
-    <SizeInvoice/>
-    <Coupon/>   */}
+    // <SizeInvoice/>  */}
+    {/* <Coupon/>  */}
     {/* <OrderInvoice/> */}
     {/* <Email/> */}
      {/* <Sidebar/> */}
      {/* <ImageGallery/> */}
     {/* <Media/> */}
-    <GiftCardSettings/>
+    {/* <GiftCardSettings/> */}
+   <LocationSettings/>
     </div>
   );
 }

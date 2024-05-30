@@ -1,46 +1,42 @@
+// src/CouponForm.js
 import React from 'react';
 import './coupon.css';
 
-const Coupons = () => {
+const Coupon = () => {
   return (
-    <div className="coupons">
+    <div className="coupon-form">
       <h1>Coupons</h1>
       <div className="coupon-data">
-        <h2>Coupon Data</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>General</th>
-              <th>Discount Type</th>
-              <th>Usage Restriction</th>
-              <th>Coupon Amount</th>
-              <th>Usage Limit</th>
-              <th>Expiry Date</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>-</td>
-              <td>Fixed Cart Discount</td>
-              <td>-</td>
-              <td>$1111</td>
-              <td>-</td>
-              <td>05-05-2024</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="section general">
+          <h2>Coupon Data</h2>
+          <div className="form-group">
+            <label>Discount Type</label>
+            <select>
+              <option>Fixed Cart Discount</option>
+              <option>Percentage Discount</option>
+              <option>Fixed Product Discount</option>
+            </select>
+          </div>
+          <div className="form-group">
+            <label>Coupon Amount</label>
+            <input type="text" value="1111" />
+          </div>
+        </div>
+        <div className="section usage-restriction">
+          <h2>Usage Restriction</h2>
+          <div className="form-group">
+            <label>Allow Free Shipping</label>
+            <input type="checkbox" checked />
+          </div>
+          <div className="form-group">
+            <label>Expiry Date</label>
+            <input type="date" value="2024-05-05" />
+          </div>
+        </div>
+        <button className="save-button">Save</button>
       </div>
-      <div className="discount-type">
-        <h2>Discount Type</h2>
-        <ul>
-          <li>Fixed Cart Discount</li>
-          <li>Percentage Discount</li>
-          <li>Fixed Product Discount</li>
-        </ul>
-      </div>
-      <button>Save</button>
     </div>
   );
 };
 
-export default Coupons;
+export default Coupon;
