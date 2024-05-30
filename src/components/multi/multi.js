@@ -7,7 +7,7 @@ const LocationSettings = () => {
     <>
     <div className="multitopButtons">
     <button className="coupons"> General</button>
-    <button className="giftCards">Gift location </button>
+    <button className="giftCards">location </button>
     <button className="giftCards">Check out</button>
   </div>
   <div className="location-settings">

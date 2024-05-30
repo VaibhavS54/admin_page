@@ -40,9 +40,10 @@ const Library = () => {
 
   return (
     <div className="medialibrary">
-        <div className="lib">
+        <div className="middleInputs">
       <h1>Library</h1>
-      <button className="add-new-button">Add New</button></div>
+      <button className="but">Add New</button>
+      </div>
       <div className="mediatoolbar">
         <div className="mediafilter-container">
           <select className="mediafilter">

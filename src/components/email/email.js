@@ -8,33 +8,39 @@ function Email() {
   const [deliveredGiftCardNotification, setDeliveredGiftCardNotification] = useState(false);
   const [usedGiftCard, setUsedGiftCard] = useState(false);
     return (
-      <div>
+      <div className="top">
         <div className="topButtons">
-          <button className="coupons"> Coupons</button>
-          <button className="giftCards">Gift card</button>
+        <button className="coupons"> Coupons</button>
+        <button className="giftCards">Gift card</button>
+      </div>
+      <div className="mainInvoiceContainer">
+        <div className="middleInputs">
+          <button className="but">Add new</button>
+          <button className="but">import/export</button>
         </div>
-        <div className="mainInvoiceContainer">
-          <div className="middleInputs">
-            <button className="but">Add new</button>
-            <button className="but">import/export</button>
+
+        <div className="redButtonsContainer">
+          <button>ALL</button>
+          <button>Redeemed</button>
+          <button>Not Redeemed</button>
+        </div>
+
+        <div className="lastInputContainer">
+        <div className="leftInputs">  
+            <select className="bulk">
+            <option>Bulk action</option>
+            </select>
+            <button>Apply</button>
+            <select className="bulk">
+            <option>Email</option>
+            </select>
           </div>
-  
-          <div className="redButtonsContainer">
-            <button>ALL</button>
-            <button>Redeemed</button>
-            <button>Not Redeemed</button>
+          <div className="rightInputs">
+            <input placeholder="search" type="text" />
+            <EmailCounter />
           </div>
-  
-          <div className="lastInputContainer">
-            <div className="leftInputs">
-              <input placeholder="Bulk Actions" />
-              <button>Apply</button>
-              <input placeholder="Dashboard" />
-            </div>
-            <div className="rightInputs">
-              <input placeholder="search" type="text" />
-              <EmailCounter />
-            </div>
+        </div>
+
             <div className="email-settings">
       <h2>Email</h2>
       <p>Manage and customize the emails sent to users about gift cards.</p>
@@ -69,7 +75,6 @@ function Email() {
         />
       </div>
     </div>
-          </div>
           </div>
           </div>
 );
