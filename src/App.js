@@ -28,14 +28,12 @@ import OrderDetails from './components/orderdetails/orderdetails';
 function App() {
   return (
     <div className="App">
-       {/* <Sidebar/>
+       {/* <Sidebar/> 
        <Dashboard/>
        <Currency/>
        <LocationSettings/>
        <Checkout/>
        <BlogInvoice/>
-       <ImageGallery/>
-       <Media/>
        <PageInvoice/>
        <CommentInvoice/>
        <SizeInvoice/> 
@@ -50,7 +48,9 @@ function App() {
        <Order/>
        <OrderInvoice/>
       <GiftCardSettings/> */}
-      <OrderDetails/>
+      {/* <OrderDetails/> */}
+      {/* <ImageGallery/> */}
+      <Media/>
     </div>
   );
 }

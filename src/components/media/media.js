@@ -42,14 +42,14 @@ const Library = () => {
     <div className="medialibrary">
         <div className="middleInputs">
       <h1>Library</h1>
-      <button className="but">Add New</button>
+      <button className="buut">Add New</button>
       </div>
       <div className="mediatoolbar">
         <div className="mediafilter-container">
           <select className="mediafilter">
             <option value="all">All Files</option>
           </select>
-          <select className="filter">
+          <select className="mediafilter">
             <option value="all">All Dates</option>
           </select>
           <input type="text" placeholder="Search" className="search-bar" />
