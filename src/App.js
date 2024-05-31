@@ -23,6 +23,7 @@ import Checkout from './components/multicheck/multicheck';
 import Currency from './components/multigeneral/multigeneral';
 import GiftCard from './components/giftcard/giftcard';
 import Dashboard from './components/dashboard/dashboard';
+import OrderDetails from './components/orderdetails/orderdetails';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
        <Order/>
        <OrderInvoice/>
       <GiftCardSettings/> */}
+      <OrderDetails/>
     </div>
   );
 }
