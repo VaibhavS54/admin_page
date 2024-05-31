@@ -1,6 +1,40 @@
-
 import React from 'react';
 import './dashboard.css';
+
+const currencies = [
+  "1. Currency",
+  "2.",
+  "3.",
+  "4.",
+  "5.",
+  "6."
+];
+
+const mediaItems = [
+  "Picture 1",
+  "Picture 2",
+  "Picture 3",
+  "Picture 4"
+];
+
+const editedPages = [
+  "Homepage",
+  "Comments",
+  "Products",
+  "Users"
+];
+
+const products = [
+  { name: "Product 1", sku: "SKU1234" },
+  // Add more products as needed
+];
+
+const activeUsers = [
+  "Username",
+  "Username",
+  "Username",
+  "Username"
+];
 
 const Dashboard = () => {
   return (
@@ -11,12 +45,9 @@ const Dashboard = () => {
           <button className="expand-button">Expand</button>
         </div>
         <ul>
-          <li className="sift">1. Currency</li>
-          <li className="sift">2.</li>
-          <li className="sift">3.</li>
-          <li className="sift">4.</li>
-          <li className="sift">5.</li>
-          <li className="sift">6.</li>
+          {currencies.map((currency, index) => (
+            <li key={index} className="sift">{currency}</li>
+          ))}
         </ul>
       </div>
       <div className="card">
@@ -25,10 +56,9 @@ const Dashboard = () => {
           <button className="expand-button">Expand</button>
         </div>
         <div className="media-grid">
-          <div className="media-item">Picture 1</div>
-          <div className="media-item">Picture 2</div>
-          <div className="media-item">Picture 3</div>
-          <div className="media-item">Picture 4</div>
+          {mediaItems.map((item, index) => (
+            <div key={index} className="media-item">{item}</div>
+          ))}
         </div>
       </div>
       <div className="card">
@@ -37,10 +67,9 @@ const Dashboard = () => {
           <button className="expand-button">Expand</button>
         </div>
         <ul>
-          <li className="sift">Homepage</li>
-          <li className="sift">Comments</li>
-          <li className="sift">Products</li>
-          <li className="sift">Users</li>
+          {editedPages.map((page, index) => (
+            <li key={index} className="sift">{page}</li>
+          ))}
         </ul>
       </div>
       <div className="card">
@@ -77,11 +106,12 @@ const Dashboard = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Product 1</td>
-              <td>SKU1234</td>
-            </tr>
-            {/* Add more rows as needed */}
+            {products.map((product, index) => (
+              <tr key={index}>
+                <td>{product.name}</td>
+                <td>{product.sku}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>
@@ -91,22 +121,12 @@ const Dashboard = () => {
           <button className="expand-button">Expand</button>
         </div>
         <ul className="user-list">
-          <li>
-            <div className="avatar"></div>
-            Username
-          </li>
-          <li>
-            <div className="avatar"></div>
-            Username
-          </li>
-          <li>
-            <div className="avatar"></div>
-            Username
-          </li>
-          <li>
-            <div className="avatar"></div>
-            Username
-          </li>
+          {activeUsers.map((user, index) => (
+            <li key={index}>
+              <div className="avatar"></div>
+              {user}
+            </li>
+          ))}
         </ul>
       </div>
     </div>
