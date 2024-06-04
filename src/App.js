@@ -24,6 +24,8 @@ import Currency from './components/multigeneral/multigeneral';
 import GiftCard from './components/giftcard/giftcard';
 import Dashboard from './components/dashboard/dashboard';
 import OrderDetails from './components/orderdetails/orderdetails';
+import ProductInvoice from './components/product/productinvoice';
+import MeasurementCalculator from './components/productdata/productdata';
 
 function App() {
   return (
@@ -50,7 +52,9 @@ function App() {
       <GiftCardSettings/> */}
       {/* <OrderDetails/> */}
       {/* <ImageGallery/> */}
-      <Media/>
+      {/* <Media/> */}
+      {/* <ProductInvoice/> */}
+      <MeasurementCalculator/>
     </div>
   );
 }
