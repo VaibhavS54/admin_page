@@ -34,6 +34,7 @@ import AttributeForm from './components/productattribute/productattribute';
 import ProductCustom from './components/productcustom/productcustom';
 import ProductFeq from './components/productfreq/productfreq';
 import ProductCategories from './components/category/category';
+import ProductMedia from './components/productmedia/productmedia';
 
 function App() {
   return (
@@ -66,10 +67,11 @@ function App() {
       {/* <ProductInventory/> */}
     {/* <ShippingForm/> */}
     {/* <ProductLink/> */}
-    <AttributeForm/>
+    {/* <AttributeForm/> */}
     {/* <ProductCustom/> */}
     {/* <ProductFeq/> */}
     {/* <ProductCategories/> */}
+    <ProductMedia/>
     </div>
   );
 }
