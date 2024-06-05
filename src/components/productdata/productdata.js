@@ -18,6 +18,39 @@ const ProductData = () => {
         <div className="genform-groupsadd">
                 <button className="genadd-media-button">Add Media</button>
             </div>
+            <div className="midseo-form">
+      <div className="midform-group">
+        <label>Product Title</label>
+        <div className="midinput-group">
+          <select>
+            <option>Product Title</option>
+            <option>Separator</option>
+            <option>Site Title</option>
+          </select>
+          <input type="text"  />
+        </div>
+      </div>
+
+      <div className="midform-group">
+        <label>Meta Description</label>
+        <div className="midinput-group">
+          <select>
+            <option>Product Short Description</option>
+            <option>Product Content</option>
+          </select>
+          <textarea />
+        </div>
+      </div>
+
+      <div className="midform-group">
+        <label>Focus Keyphrase</label>
+        <div className="midinput-group">
+          <input type="text" />
+          <button>Add Focus Keyphrase</button>
+          <button>Get Additional Keyphrases</button>
+      </div>
+    </div>
+    </div>
       <header className="genheader">
         <h2>Size Chart:</h2>
         <button className="gendrop-file">Or drop a file</button>

@@ -67,6 +67,55 @@ input[type="text"] {
     background-color: #c9302c;
 }
 
+.midseo-form {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.midform-group {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.midform-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.midinput-group {
+  align-items: center;
+}
+
+.midinput-group select{
+  margin-bottom: 10px;
+}
+
+.midinput-group textarea {
+ display: flex;
+ height: 2.5cm;
+ width: 17.3cm;
+}
+.midinput-group input{
+  width: 25cm;
+}
+
+.midinput-group button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background: white;
+  color: black;
+  cursor: pointer;
+  margin-right: 5px;
+  border: 1px solid black;
+}
+
   .genheader {
     display: flex;
     justify-content: space-between;
@@ -127,7 +176,6 @@ input[type="text"] {
   .genSidebar ul {
     list-style: none;
     padding: 0;
-    gap: 30px;
   }
   
   .genSidebar ul li {

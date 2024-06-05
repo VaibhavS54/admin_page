@@ -33,6 +33,7 @@ import ProductLink from './components/productlink/productlink';
 import AttributeForm from './components/productattribute/productattribute';
 import ProductCustom from './components/productcustom/productcustom';
 import ProductFeq from './components/productfreq/productfreq';
+import ProductCategories from './components/category/category';
 
 function App() {
   return (
@@ -61,13 +62,14 @@ function App() {
       {/* <ImageGallery/> */}
       {/* <Media/> */}
       {/* <ProductInvoice/> */}
-      <ProductData/>
+      {/* <ProductData/> */}
       {/* <ProductInventory/> */}
     {/* <ShippingForm/> */}
     {/* <ProductLink/> */}
-    {/* <AttributeForm/> */}
+    <AttributeForm/>
     {/* <ProductCustom/> */}
     {/* <ProductFeq/> */}
+    {/* <ProductCategories/> */}
     </div>
   );
 }
