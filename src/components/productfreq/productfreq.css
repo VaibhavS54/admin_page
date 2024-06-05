@@ -1,0 +1,36 @@
+.feqcontainer {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+    margin-top: 3cm;
+    margin-left: 6cm;
+  }
+  
+  .feqproduct-search,
+  .feqdiscount,
+  .feqcheck-all {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .feqitems{
+    display: flex;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }

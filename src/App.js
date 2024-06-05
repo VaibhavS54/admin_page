@@ -26,6 +26,13 @@ import Dashboard from './components/dashboard/dashboard';
 import OrderDetails from './components/orderdetails/orderdetails';
 import ProductInvoice from './components/product/productinvoice';
 import MeasurementCalculator from './components/productdata/productdata';
+import ProductData from './components/productdata/productdata';
+import ProductInventory from './components/productinvent/productinvent';
+import ShippingForm from './components/productshipping/productshipping';
+import ProductLink from './components/productlink/productlink';
+import AttributeForm from './components/productattribute/productattribute';
+import ProductCustom from './components/productcustom/productcustom';
+import ProductFeq from './components/productfreq/productfreq';
 
 function App() {
   return (
@@ -54,7 +61,13 @@ function App() {
       {/* <ImageGallery/> */}
       {/* <Media/> */}
       {/* <ProductInvoice/> */}
-      <MeasurementCalculator/>
+      <ProductData/>
+      {/* <ProductInventory/> */}
+    {/* <ShippingForm/> */}
+    {/* <ProductLink/> */}
+    {/* <AttributeForm/> */}
+    {/* <ProductCustom/> */}
+    {/* <ProductFeq/> */}
     </div>
   );
 }
