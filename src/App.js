@@ -70,8 +70,8 @@ function App() {
     {/* <AttributeForm/> */}
     {/* <ProductCustom/> */}
     {/* <ProductFeq/> */}
-    {/* <ProductCategories/> */}
-    <ProductMedia/>
+    <ProductCategories/>
+    {/* <ProductMedia/> */}
     </div>
   );
 }
